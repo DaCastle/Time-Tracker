@@ -1,0 +1,31 @@
+{
+  "name": "Dakota's Time Tracker",
+  "version": "1.0",
+  "description": "Track your work hours!",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "alarms"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "background.js",
+      "eventPage.js"
+    ],
+    "persistent": true
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "favicon16.png"
+    }
+  },
+  "icons": {
+    "16": "favicon16.png",
+    "48": "favicon48.png",
+    "128": "favicon128.png"
+  },
+  "manifest_version": 2
+}

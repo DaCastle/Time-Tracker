@@ -1,0 +1,33 @@
+body {
+  width: 500px;
+  height: 500px;
+  background-color: lightseagreen;
+}
+.client {
+  width: 100px;
+}
+.hours {
+  width: 20px;
+}
+.notes {
+  width: 250px;
+}
+.row {
+  padding: 3px 0px;
+}
+button {
+  display: inline-block;
+  width: 30%;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+#save {
+  background-color: #4CAF50;
+}
+#reset {
+  float: right;
+  background-color: orange;
+}
+#save:hover, #reset:hover {
+  background-color: lightcoral;
+}
