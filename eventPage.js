@@ -19,14 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(error);
     }
   }, 60000);
-
-  function getAlertTime() {
-    try {
-      chrome.storage.sync.get(["alertTime"], function(result) {
-        alertTime = parseInt(result.alertTime);
-      });
-    } catch (error) {
-      return error;
-    }
-  }
 });
