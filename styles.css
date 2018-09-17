@@ -17,7 +17,7 @@ body {
 }
 button {
   display: inline-block;
-  width: 30%;
+  width: 25%;
   padding: 10px 10px;
   font-size: 16px;
 }
@@ -30,4 +30,12 @@ button {
 }
 #save:hover, #reset:hover {
   background-color: lightcoral;
+}
+#hours {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+#hoursLabel {
+  font-size: 16px;
+  margin-left: 20px;
 }
