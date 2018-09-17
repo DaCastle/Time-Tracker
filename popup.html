@@ -1,159 +1,132 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Alarms Popup</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
 
-        <button id="save">Save</button>
+<head>
+    <title>Alarms Popup</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-        <label id="hoursLabel" for="hours"> Reminder time: </label>
-        <select id="hours">
-            <option value="6">6am</option>
-            <option value="7">7am</option>
-            <option value="8">8am</option>
-            <option value="9">9am</option>
-            <option value="10">10am</option>
-            <option value="11">11am</option>
-            <option value="12">12pm</option>
-            <option value="13">1pm</option>
-            <option value="14">2pm</option>
-            <option value="15">3pm</option>
-            <option value="16">4pm</option>
-            <option value="17">5pm</option>
-            <option value="18">6pm</option>
-            <option value="19">7pm</option>
-            <option value="20">8pm</option>
-            <option value="21">9pm</option>
-            <option value="22">10pm</option>
-          </select>
+<body>
 
-        <button id="reset">Reset</button>
+    <button id="save">Save</button>
 
-        <h3>Monday</h3>
+    <label id="hoursLabel" for="hours"> Reminder time: </label>
+    <select id="hours">
+        <option value="6">6am</option>
+        <option value="7">7am</option>
+        <option value="8">8am</option>
+        <option value="9">9am</option>
+        <option value="10">10am</option>
+        <option value="11">11am</option>
+        <option value="12">12pm</option>
+        <option value="13">1pm</option>
+        <option value="14">2pm</option>
+        <option value="15">3pm</option>
+        <option value="16">4pm</option>
+        <option value="17">5pm</option>
+        <option value="18">6pm</option>
+        <option value="19">7pm</option>
+        <option value="20">8pm</option>
+        <option value="21">9pm</option>
+        <option value="22">10pm</option>
+    </select>
 
-        <div id="mondayClients">
+    <button id="reset">Reset</button>
 
-            <div class="row">
-                <label>Client </label><input id="mondayClient1" type="text"
-                    class="client" />
-                <label>Hours </label><input id="mondayHours1" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="mondayNotes1" type="text"
-                    class="notes" />
-            </div>
+    <h3>Monday</h3>
 
-            <div class="row">
-                <label>Client </label><input id="mondayClient2" type="text"
-                    class="client" />
-                <label>Hours </label><input id="mondayHours2" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="mondayNotes2" type="text"
-                    class="notes" />
-            </div>
+    <div id="mondayClients">
 
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
         </div>
 
-        <h3>Tuesday</h3>
-
-        <div id="tuesdayClients">
-
-            <div class="row">
-                <label>Client </label><input id="tuesdayClient1" type="text"
-                    class="client" />
-                <label>Hours </label><input id="tuesdayHours1" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="tuesdayNotes1" type="text"
-                    class="notes" />
-            </div>
-
-            <div class="row">
-                <label>Client </label><input id="tuesdayClient2" type="text"
-                    class="client" />
-                <label>Hours </label><input id="tuesdayHours2" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="tuesdayNotes2" type="text"
-                    class="notes" />
-            </div>
-
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
         </div>
 
-        <h3>Wednesday</h3>
+    </div>
 
-        <div id="wednesdayClients">
+    <h3>Tuesday</h3>
 
-            <div class="row">
-                <label>Client </label><input id="wednesdayClient1" type="text"
-                    class="client" />
-                <label>Hours </label><input id="wednesdayHours1" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="wednesdayNotes1" type="text"
-                    class="notes" />
-            </div>
+    <div id="tuesdayClients">
 
-            <div class="row">
-                <label>Client </label><input id="wednesdayClient2" type="text"
-                    class="client" />
-                <label>Hours </label><input id="wednesdayHours2" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="wednesdayNotes2" type="text"
-                    class="notes" />
-            </div>
-
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
         </div>
 
-        <h3>Thursday</h3>
-
-        <div id="thursdayClients">
-
-            <div class="row">
-                <label>Client </label><input id="thursdayClient1" type="text"
-                    class="client" />
-                <label>Hours </label><input id="thursdayHours1" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="thursdayNotes1" type="text"
-                    class="notes" />
-            </div>
-
-            <div class="row">
-                <label>Client </label><input id="thursdayClient2" type="text"
-                    class="client" />
-                <label>Hours </label><input id="thursdayHours2" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="thursdayNotes2" type="text"
-                    class="notes" />
-            </div>
-
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
         </div>
 
-        <h3>Friday</h3>
+    </div>
 
-        <div id="fridayClients">
+    <h3>Wednesday</h3>
 
-            <div class="row">
-                <label>Client </label><input id="fridayClient1" type="text"
-                    class="client" />
-                <label>Hours </label><input id="fridayHours1" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="fridayNotes1" type="text"
-                    class="notes" />
-            </div>
+    <div id="wednesdayClients">
 
-            <div class="row">
-                <label>Client </label><input id="fridayClient2" type="text"
-                    class="client" />
-                <label>Hours </label><input id="fridayHours2" type="text"
-                    class="hours" />
-                <label>Notes </label><input id="fridayNotes2" type="text"
-                    class="notes" />
-            </div>
-
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
         </div>
 
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
+        </div>
+
+    </div>
+
+    <h3>Thursday</h3>
+
+    <div id="thursdayClients">
+
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
+        </div>
+
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
+        </div>
+
+    </div>
+
+    <h3>Friday</h3>
+
+    <div id="fridayClients">
+
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
+        </div>
+
+        <div class="row">
+            <label>Client </label><input type="text" class="client" />
+            <label>Hours </label><input type="text" class="hours" />
+            <label>Notes </label><input type="text" class="notes" />
+        </div>
+
+    </div>
 
 
-        <script src="popup.js"></script>
-        <script src="myAlert.js"></script>
-    </body>
+
+    <script src="popup.js"></script>
+    <script src="myAlert.js"></script>
+</body>
+
 </html>

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var saveButton = document.getElementById("save");
   var resetButton = document.getElementById("reset");
   var inputs = document.getElementsByTagName("input");
@@ -6,21 +6,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   getAndSetData();
 
-  saveButton.addEventListener("click", function() {
+  saveButton.addEventListener("click", function () {
     saveData();
   });
-  resetButton.addEventListener("click", function() {
+  resetButton.addEventListener("click", function () {
     resetData();
   });
 
   function getAndSetData() {
     let data = [];
     try {
-      chrome.storage.sync.get(["data"], function(result) {
+      chrome.storage.sync.get(["data"], function (result) {
         data = result.data;
         if (data !== undefined) {
           let counter = 0;
-          rows.forEach(function(row) {
+          rows.forEach(function (row) {
             row = row.children;
             row[1].value = data[counter].client;
             row[3].value = data[counter].hours;
@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  var saveData = function() {
+  var saveData = function () {
     let data = [];
 
-    rows.forEach(function(row) {
+    rows.forEach(function (row) {
       row = row.children;
       data.push({
         client: row[1].value,
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
 
-    chrome.storage.sync.set({ data: data }, function() {});
+    chrome.storage.sync.set({ data: data }, function () { });
   };
 
-  var resetData = function() {
+  var resetData = function () {
     let data = [];
 
-    rows.forEach(function(row) {
+    rows.forEach(function (row) {
       row = row.children;
       data.push({
         client: "",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
 
-    chrome.storage.sync.set({ data: data }, function() {
+    chrome.storage.sync.set({ data: data }, function () {
       getAndSetData();
     });
   };
