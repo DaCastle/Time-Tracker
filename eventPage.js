@@ -1,21 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var alertTime = getAlertTime();
+  var alertTime = "";
 
   setInterval(function() {
     var date = new Date();
     var hour = date.getHours();
     var min = date.getMinutes();
-    alertTime = getAlertTime();
 
-    if (hour === parseInt(getAlertTime()) && min === 0) {
-      alert("its " + alertTime + " ! A good time to update your hours (:");
+    try {
+      chrome.storage.sync.get(["alertTime"], function(result) {
+        alertTime = parseInt(result.alertTime);
+        if (hour === alertTime && min === 0) {
+          alert(
+            "it's " + alertTime + ":00! A good time to update your hours (:"
+          );
+        }
+      });
+    } catch (error) {
+      console.log(error);
     }
   }, 60000);
 
   function getAlertTime() {
     try {
       chrome.storage.sync.get(["alertTime"], function(result) {
-        return result.alertTime;
+        alertTime = parseInt(result.alertTime);
       });
     } catch (error) {
       return error;
